@@ -1,0 +1,311 @@
+html{ 
+    background-color: #F5F3EE;
+}
+body{
+	padding:0;
+	margin:0;
+}
+header{
+    background-color: #7D1935;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+	padding: 0px 40px;
+	box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+}
+h1{ 
+    display:inline-block;
+	color: #ecf0f1; 
+	font-family: 'Helvetica Neue', sans-serif; 
+	font-size: 30px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 0; 
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+    margin-left: 10px;
+}
+@font-face{
+    font-family: "Futura Thin";
+    src: url("Futura-Normal.eot");
+	src: url("Futura-Normal.woff") format("WOFF"),
+        url("Futura-Normal.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face{
+    font-family: Futura;
+    src: url("Futura-MediumBT.eot");
+	src: url("Futura-MediumBT.woff") format("WOFF"),
+        url("Futura-MediumBT.ttf") format("truetype");
+    font-weight: normal;
+}
+#options{
+    font-family: 'Open Sans', sans-serif; 
+    font-size:20px;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+    display:inline-block;
+}
+.links {
+    text-decoration:none;
+    display: inline-block;
+    color: #ecf0f1;
+    opacity: 1;
+    padding-left: 20px;
+    transition: opacity 0.4s ease-in-out;
+   -moz-transition: opacity 0.4s ease-in-out;
+   -webkit-transition: opacity 0.4s ease-in-out;
+}
+.links:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.links:hover{
+    opacity: 0.6;
+}
+.links:hover:after {
+    width: 100%;
+    background: #ecf0f1;
+}
+#link_selected:after{
+    width: 100%;
+    background: #ecf0f1;
+}
+
+/* Next Buttons CSS */
+.nextposts, .nextphotos, .nextprofileposts, .nextprofilealbums{
+    margin-top:3%;
+    cursor:pointer;
+    font-family: 'Open Sans', sans-serif; 
+    font-size:18px;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+    display: inline-block;
+    color: #111;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+   -moz-transition: opacity 0.4s ease-in-out;
+   -webkit-transition: opacity 0.4s ease-in-out;
+}
+.nextposts:hover, .nextphotos:hover, .nextprofileposts:hover, .nextprofilealbums:hover{
+    opacity: 0.6;
+}
+.nextposts:after, .nextphotos:after, .nextprofileposts:after, .nextprofilealbums:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.nextposts:hover:after, .nextphotos:hover:after, .nextprofileposts:hover:after, .nextprofilealbums:hover:after {
+    width: 100%;
+    background: #111;
+}
+
+/* Posts CSS */
+.posts_div{
+    margin:12.5% auto;
+    border-left:thick solid #ff0000;
+    width:50%;
+    color:#ecf0f1; 
+	font-family:"Futura Thin", sans-serif;
+    padding:0px;
+	font-size:15px; 
+	font-weight:300; 
+	letter-spacing:1px;	
+	text-align:center;
+}
+.post_container{
+    text-align:justify;
+    background-color:#4A96AD;
+    width:100%;
+    height:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:45px;
+    padding:10px;
+    word-wrap: break-word;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.post_user{
+    font-family:Futura, sans-serif;
+    font-size:20px;
+}
+.post_user:hover{
+    cursor:pointer;
+    
+    text-decoration:underline;
+}
+.post_title{
+    font-weight:bold;
+}
+
+/* Photos CSS */
+.photos_div, .album_div{
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width:1000px;
+    margin-top:5%;
+    color: #ecf0f1; 
+    text-align:center;
+}
+.photo_container{
+    height:150px;
+    width:150px;
+    margin-top:20px;
+    margin-right:20px;
+    display:inline-block;
+    transition: opacity 0.2s ease-in-out;
+   -moz-transition: opacity 0.2s ease-in-out;
+   -webkit-transition: opacity 0.2s ease-in-out;
+}
+.photo_container:hover{
+    opacity:0.7;
+    cursor:pointer;
+}
+
+/* Profile CSS */
+.profile_div{
+    margin-top:7%;
+    width:100%;
+    color: #ecf0f1; 
+}
+.profile_info{
+    font-family: Futura, sans-serif;
+    font-size: 18px;
+    text-decoration: bold;
+    background-color: #4A96AD;
+    width:16.25%;
+    height:auto;
+    float:left;
+    position:fixed;
+    padding-left: 2.5%;
+    padding-right: 1.25%;
+    word-wrap:break-word;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.profile_container{
+    width:80%;
+    float:right;
+    display:inline-block;
+    text-align:center;
+}
+.profile_posts{
+    float:left;
+    width:50%;
+}
+.pp_div{
+    font-family: "Futura Thin", sans-serif;
+    text-align: justify;
+    background-color: #4A96AD;
+    width:auto;
+    height:auto;
+    margin-top:5%;
+    margin-left:5%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pp_title{
+    font-weight: bold;
+}
+.pp_content{
+    display:none;
+}
+.pp_div:hover .pp_content{
+    display:block;
+}
+.profile_albums{
+    font-family: "Futura Thin", sans-serif;
+    width:50%;
+    float:right;
+}
+.pa_div{
+    background-color: #4A96AD;
+    width:auto;
+    height:auto;
+    font-size:20px;
+    margin-top:5%;
+    margin-left:5%;
+    margin-right:5%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pa_div:hover{
+    cursor:pointer;
+}
+
+/* Full Screen On Picture Click */
+.fullScreen {
+	display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.info {
+	position: relative;
+	background: -webkit-linear-gradient(top ,rgba(66,66,66,1), rgba(209,206,206,0));
+	opacity: 0.9;
+	width: 100%;
+	height: 75px;
+    display:none;
+}
+.photo {
+	position: relative;
+	width: 600px;
+	height: 600px;
+	margin:auto;
+    margin-top:1%;
+}
+.photo:hover{
+    cursor:pointer;
+}
+.photo:hover .info{
+    display:block;
+}
+.photo_title {
+	position: relative;
+	padding-left: 12;
+	font-family: Helvetica;
+	color: #D6E9ED;
+	font-size: 18px;
+	padding-top: 10;
+	top: 10;
+}
+.photo_author, .photo_album {
+	position: relative;
+	padding-left: 12;
+	font-family: Helvetica;
+	font-size: 12px;
+	color: #D6E9ED;
+}
+.photo_author:hover, .photo_album:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
