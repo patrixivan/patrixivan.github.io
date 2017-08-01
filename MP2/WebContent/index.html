@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/homepage-style.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link href="./css/popupSignUp-style.css" rel="stylesheet">
+		<script src="./JS/popupSignUp.js"></script>
+		<script src="./JS/jquery-3.2.1.min.js"></script>
+		<script src="./JS/script.js"></script>
+	</head>
+	<body>
+		<div class = "fullScreen">
+		</div>
+		<!--Google Font - Work Sans-->
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<div class='upload_share' id="upload_content">
+			<div class='close'>X</div>
+			Enter photo file path:
+			<input type="text" />
+			<button id="uploadbtn">Upload</button>
+		</div>
+		
+		<div class='upload_share' id="share_content">
+			<div class='close'>X</div>
+			Who to share with?
+			<input type="text" />
+			<button id="sharebtn">Share</button>
+		</div>
+		
+		<div class="fillinforms">
+			<div class="profile">
+				<button class="profile__avatar" id="toggleProfile">
+					<img src="https://pbs.twimg.com/profile_images/554631714970955776/uzPxPPtr.jpeg" alt="Avatar" /> 
+				</button>
+				<div class="profile__form">
+					<div class="profile__fields">
+						<form action="login" method = "post">
+							<div class="field">
+								<input name="uname" type="text" id="fieldUser" class="input" required pattern=.*\S.* />
+								<label for="fieldUser" class="label">Username</label>
+							</div>
+							<div class="field">
+								<input name="pword" type="password" id="fieldPassword" class="input" required pattern=.*\S.* />
+								<label for="fieldPassword" class="label">Password</label>
+							</div>
+							<div class="profile__footer">
+								<button class="btn" type="submit" id="login">Login</button>
+							</div>
+							
+							<a href="registerPage.html">Sign Up</a> 
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			<img src="./css/css-photos/upload.png" id="upload_icon" alt="upload icon" />
+			<img src="./css/css-photos/share.png" id="share_icon" alt="share icon" />
+		</div>
+		<script src="./JS/index.js"></script>
+		<article class="photos_div">
+		    <p class="nextphotos">show next 15 photos</p>
+		</article>
+		
+		<script src="./JS/script.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#upload_icon').click(function(){ $('#upload_content').show() })
+				$('.close').click(function(){ $('#upload_content').hide() })
+				$('#uploadbtn').click(function(){ $('#upload_content').hide() })
+			})
+			
+			$(document).ready(function(){
+				$('#share_icon').click(function(){ $('#share_content').show() })
+				$('.close').click(function(){ $('#share_content').hide() })
+				$('#sharebtn').click(function(){ $('#share_content').hide() })
+			})
+		</script>
+	</body>
+</html>

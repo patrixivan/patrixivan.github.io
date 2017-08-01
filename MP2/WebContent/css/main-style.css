@@ -1,0 +1,34 @@
+@CHARSET "ISO-8859-1";
+*{
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+header {
+	padding: 5%;
+}
+
+/* Navigation Bar */
+
+#body{
+    background-size: 100% auto contain;
+    background-attachment: fixed;
+    background-color: BLACK;
+    background-repeat: no-repeat;
+}
+
+.description{
+	position: fixed;
+	background: #ff8000;
+	width: 30%;
+	height: 100%;
+	z-index: -1;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-top: 10%;
+	padding-bottom: 2.5%;
+}
+
+
+
+
