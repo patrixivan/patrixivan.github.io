@@ -178,7 +178,7 @@ $(document).ready(function(){
             $('.credentials').val(1);
             $('.delete').show();
             $('.edit').show();
-            $('#hidden-image1').attr("src","images/hard-coded(phase1)/untitled.jpg")
+            $('#hidden-image1').attr("src","images/hard-coded(phase1)/Untitled.jpg")
         }
     });
     $('#Esignup').click(function(){
