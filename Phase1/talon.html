@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="view.css">
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+       <div class="shadow"></div>
+        <div class="header">
+            <a href="index.html">
+                <img class="logo" src="images/logo.png">
+            </a>
+            <div class="searchbar">
+                <input type="text" class="searchinput" name="search" placeholder="Search...">
+                <button type="submit" class="search-button"><img src="images/search.png" class="search-icon"></button>
+            </div>
+            <div class="credentials" value="0">
+                <!--with user login-->
+                <img id="header-pic" src="images/hard-coded(phase1)/userpicture.png">
+                <button class="btnUpload">Upload</button>
+                <button class="btnLogout">Log Out</button>
+                <!--no user login-->
+                <button class="btnLogin">Log In</button>
+                <button class="btnSignup">Sign Up</button>
+            </div>
+        </div>
+        
+        <!--POPUPS-->
+        
+        
+        <div id="pop2">
+    
+            <button class="close">X</button>
+            <p>Title</p> 
+            <input type = "text"> 
+            <form class="img-scale" action = "/action_page.php">                
+                <input type = "file" id = "upload" name = "pic" accept = "image/*">
+                <img id = "cicon">
+            </form>   
+            <div class = "Tags">
+                <p>Tag/s seperated by a (,)</p> 
+                <input type = "text">   
+            </div>    
+            <p>Set your meme to public or private
+                <select id = "Selector"> 
+                    <option value ="1">Public</option>
+                    <option value ="2">Private</option>
+                </select>
+            </p>
+                
+        <p id="demo">Share to whom? Seperate each name by a (,) <input type = "text"></p>
+        
+        <div id = "upload">
+            <button id="Eupload"> Upload </button>     
+        </div>
+              
+        </div>
+        
+        
+        
+        <div class="pop1">
+            <button class="close">X</button>
+            <div id = "Login"> 
+                <p id="greeting">LOGIN</p>
+                <p class="Stext" >E-mail</p>
+                <input id="Sinput" class="email" type = "text">
+                <p class="Stext" >Password</p>
+                <input id="Sinput" class="pword" type = "password">    
+                <button id="Elogin">Log in</button>
+            </div>  
+        </div>
+        
+        <div class="pop">
+            <button class="close">X</button>
+            <div id = "Signup"> 
+                <p id="greeting"> Sign Up Now to Become a Member!</p>
+                <p class="Stext">Username</p>
+                <input id="Sinput" type = "text">
+                <p class="Stext">E-mail</p>
+                <input id="Sinput" class="email" type = "text">
+                <p class="Stext">Password</p>
+                <input id="Sinput" class="pword" type = "password">    
+                <button id="Esignup">Sign Up</button>
+            </div>  
+        </div>
+        
+        <div class="post-container">
+            <!--hard-coded for now-->
+            <div class="post">
+                <a href="batman.html">
+                    <p id="title">GE TALON! UNA ULO!</p>
+                </a>
+                <img id="view-image" src="images/hard-coded(phase1)/talon.jpg">
+                <ul class="tag-container">
+                    <li class="tag" id="tag3-1">Ge</li>
+                    <li class="tag" id="tag3-2">Talon</li>
+                    <li class="tag" id="tag3-3">Una</li>
+                    <li class="tag" id="tag3-4">Ulo</li>
+                </ul>
+                <ul class="point-container">
+                    <li class="point">-666 points</li>
+                    <li class="cut">|</li>
+                    <li class="point">1000 comments</li>
+                </ul>
+                <ul class="vote-container">
+                    <li class="upvote" id="upvote3" value="0"></li>
+                    <li class="downvote" id="downvote3" value="0"></li>
+                    <div id="Status-container">
+                        <p id="status">Public</p>
+                    </div>
+                </ul>
+                <div id="comments">Comments</div>
+            </div>
+        </div>
+        <div class="comment-container">
+            <div class="comment">
+                <img class="user-pic" src="images/hard-coded(phase1)/piper.jpg">
+                <div class="info">
+                    <p class="username">Piper</p>
+                    <p class="description">I can relate to that</p>
+                </div>
+            </div>
+        </div>
+        <div class="comment-container">
+            <div class="comment">
+                <img class="user-pic" src="images/hard-coded(phase1)/batman.jpg">
+                <div class="info">
+                    <p class="username">Buttman</p>
+                    <p class="description">You must really smell bad right now.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

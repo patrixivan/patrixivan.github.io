@@ -1,0 +1,29 @@
+View all public photos
+DONE
+
+View a user profile 
+DONE
+
+Register
+DONE
+Log in
+DONE
+Log out
+
+Upload a meme
+
+Share a meme
+
+View a meme
+HALF-DONE
+Tag a meme
+
+Search a meme by tags
+Done
+
+
+======FOLLOW=======
+General
+Good user experience. Visitor can easily navigate without help, all information are easy to access.
+
+Good visual design. Design suits the theme of the application, and is cohesive and consistent across the whole application. 

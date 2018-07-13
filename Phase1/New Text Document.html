@@ -1,0 +1,87 @@
+<head>
+<style>
+*{
+margin: 0;
+}
+#header{
+background-color: black;
+position: fixed;
+width: 100%;
+height: 50px;
+}
+.post{
+padding-top:60px;
+}
+    .searchinput{
+        height:25px;
+        text-align: left;
+        vertical-align: top;
+    }
+    .search-button{
+        width:25px;
+        height:25px;
+        padding: 0;
+        margin-left: -1%;;
+    }
+    .search-icon{
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .searchbar{
+        margin-top:1%;
+    }
+    #body{
+        padding-top: 60px;
+    }
+    
+    .searched-tags{
+    padding-top: 50px;
+    min-height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+    padding-bottom: 10px;
+    display: flex;
+    }
+    
+    #searched-container{
+    vertical-align: middle;
+    margin-left: 5%;
+    margin-top:1.5%;
+    display: flex;
+    
+}
+
+#searched-title{
+    font-family: arial;
+    font-size:20;
+    font-weight: bold;
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+#searched{
+    font-family: helvetica;
+    font-style: italic;
+    font-weight:bold;
+    color: darkblue;
+    margin-top:1%;
+    font-size:19;
+}
+    
+</style>
+    <script src="jquery-3.3.1.min.js"></script>
+        <script src="main.js"></script>
+<body>
+<div id="header">
+    <div class="searchbar">
+        <input type="text" class="searchinput" name="search" placeholder="Search...">
+        <button type="submit" class="search-button"><img src="images/search.png" class="search-icon"></button>
+    </div>
+</div>
+<div class="searched-tags">
+    <div id="searched-container">
+        <p id="searched-title">Searched Tags:</p>
+        <p id="searched">TITE</p>
+    </div>
+</div>
